@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import './head.css'
-import CardHeader from '@material-ui/core/CardHeader';
+
 
 export class head extends Component {
     static propTypes = {

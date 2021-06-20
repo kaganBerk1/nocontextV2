@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import Head from "./head.js"
 import QuestionPart from "./QuestionPart.js"
 import './App.css';
