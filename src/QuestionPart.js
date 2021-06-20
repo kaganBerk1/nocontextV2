@@ -5,10 +5,12 @@ import './QuestionPart.css'
 import Button from '@material-ui/core/Button';
 import DoneOutlineIcon from '@material-ui/icons/DoneOutline';
 import CloseIcon from '@material-ui/icons/Close';
+
+
 const getQuestion=()=>{
     let id=Math.floor(Math.random() * (34 - 1) ) + 1;
     const item=question.find(s=>s.id===id);
-    return item;
+    return item; 
 }
     
 export class QuestionPart extends Component {
@@ -21,8 +23,11 @@ export class QuestionPart extends Component {
             score:1,
             isTrue:false,
             answer:"null",
+            init:true,
+            asked:[]
         };
       }
+
 
     cheack=(q,e)=>{
         let score2=this.state.score;
@@ -33,17 +38,21 @@ export class QuestionPart extends Component {
                 score:score2,
                 isTrue:true,
                 answer:q.answer,
+                init:false,
+                
             })
         }else {
             this.setState({
                 question:getQuestion(),
                 answer:q.answer,
                 isTrue:false,
+                init:false,
             })
         }
+        
     }
     render() {
-        const {question,isTrue,answer}=this.state;
+        const {question,isTrue,answer,init}=this.state;
         const listNames=["CAN","MERT","TANCAN"];
 
         return (
@@ -62,7 +71,7 @@ export class QuestionPart extends Component {
 
                     <h2 style={{position:"relative",top:"20px"}}>Score = {this.state.score===1?0:this.state.score-1}</h2> 
 
-                    <h2 className={isTrue?"showAnswer":"closeAnswer"}>Cevap Buydu = {answer}</h2>         
+                    {init?null:<h2 className={isTrue?"showAnswer":"closeAnswer"}>Cevap Buydu = {answer}</h2>  }       
             </div>
         )
     }

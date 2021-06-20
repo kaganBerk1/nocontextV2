@@ -24,6 +24,8 @@
     justify-content: center;
     margin-bottom: 20px;
     border-radius: 20px;
+    font-family: 'Raleway';
+    font-size: 24px;;
 }
 .button{
     width: 200px;
@@ -42,10 +44,8 @@
     position: relative;
     opacity: 0;
 }
-.CloseAnswer{
-    opacity: 0;
-    animation: opacityOnAndOff 0.5s normal forwards;
-    animation-delay: 0s;
+.closeAnswer{   
+    opacity: 1;
 }
 .showAnswer{
     animation: opacityOnAndOff 0.5s normal forwards;
@@ -60,5 +60,19 @@
     }
     100% {
         opacity: 0;
+    }
+}
+@keyframes off {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity:1;
+    }
+    70%{
+        opacity:0.4;
+    }
+    100%{
+        opacity:0;
     }
 }

@@ -1,4 +1,4 @@
-const questions=[
+let questions=[
     {
        "id":1,
        "question":"CANım böyle boş boş sağa sola FIÇIK FIÇIK FIÇIK diye sıkarak gezmek istiyor. SPİ SPİ SPİ diye böyle",

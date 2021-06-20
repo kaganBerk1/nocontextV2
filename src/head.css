@@ -7,13 +7,12 @@
     align-items: center;
     justify-content: center;
     border-radius: 0 0 20px 20px;
-    background-size:cover ;
-    background-repeat: no-repeat;
-    background-image: url("image.jpg");
+    background-color: #EBB805;
     color:black;
     box-shadow:-1px 12px 32px -3px rgba(0,0,0,0.2) ;
     opacity: 0.8;
 }
-h4{
-    color: gray;
+h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 40px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+h2{
+    color:#71696B;
 }
