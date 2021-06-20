@@ -12,7 +12,6 @@ export class head extends Component {
             <div className="head">
                 <h1>NoContext Quiz</h1>
                 <h2>Bunu kim söylemiştir?</h2>
-                <h4>(Aşağıda isimleri geçen kişiler tamamen hayal ürünüdür. Herhangi bir kişi ya da kişilerle bir ilişki yoktur)</h4>
             </div>
         )
     }
